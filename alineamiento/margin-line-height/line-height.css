@@ -1,0 +1,79 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 550px;
+}
+.container {
+    background-color: turquoise;
+    width: 180px;
+    height: 180px;
+}
+.container1 {
+    text-align: left;
+    line-height: 180px;
+}
+.container2 {
+    text-align: center;
+    line-height: 180px;
+}
+.container3 {
+    line-height: 180px;
+    text-align: right;
+}
+
+.element {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+.element1 {
+    background-color: papayawhip;
+    line-height: 45px;
+    vertical-align: top;
+    
+}
+.element2 {
+    background-color: papayawhip;
+    line-height: 20px;
+    vertical-align: middle;
+    
+}
+.element3 {
+    background-color: papayawhip;
+    line-height: 20px;
+    vertical-align: bottom;
+    
+}
+.element4 {
+    background-color: pink;
+    line-height: 20px;
+    vertical-align: top;
+    
+}
+.element5 {
+    background-color: pink;
+    line-height: 20px;
+    vertical-align: middle;    
+}
+.element6 {
+    background-color: pink;
+    line-height: 20px;
+    vertical-align: bottom;
+}
+.element7 {
+    background-color: lightcyan;
+    line-height: 20px;
+    vertical-align: top;
+}
+.element8 {
+    background-color: lightcyan;
+    line-height: 20px;
+    vertical-align: middle;    
+}
+.element9 {
+    background-color: lightcyan;
+    line-height: 20px;
+    vertical-align: bottom;
+}
