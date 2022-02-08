@@ -138,11 +138,12 @@ main {
 
 .main-content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px,500px));
+    grid-template-columns: repeat(2, minmax(420px,500px));
+    grid-auto-rows: 420px;
     justify-content: center;
     align-items: center;
-    padding: 120px 0;
-    gap: 150px 40px;
+    padding: 200px 0;
+    gap: 0px 40px;
 }
 .main-content h2{
     margin-bottom: 20px;
@@ -185,7 +186,7 @@ main {
     position: relative;
     z-index: 1;
     grid-column: 1/2;
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 
@@ -292,6 +293,7 @@ main {
 .main-content__container-2 {
     height: 415px;
     display: grid;
+    grid-row: 3/4;
     grid-template-columns: repeat(14, 1fr);
     grid-template-rows: repeat(13, 1fr);
 }
