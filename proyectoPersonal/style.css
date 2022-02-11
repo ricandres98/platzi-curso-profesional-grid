@@ -35,7 +35,7 @@ img {
 
 header {
     width: 100%;
-    min-height: 90px;
+    min-height: 50px;
     padding: 10px 40px;
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(500px,1fr)); */
@@ -53,6 +53,7 @@ header > a {
 }
 header h1 {
     text-transform: uppercase;
+    font-size: 2rem;
     font-style: italic;
     font-weight: 600;
 }
@@ -65,7 +66,7 @@ header nav li {
     list-style: none;
 }
 header nav a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
     color: inherit;
     text-transform: uppercase;
@@ -73,9 +74,7 @@ header nav a {
 }
 main {
     background-color: var(--primary-color-light-1);
-    padding: 0px 80px;
-    /* display: grid; */
-    /* justify-content: center; */
+    padding: 0px 20px;
 }
 /*------------------
 ------- HERO -------
@@ -91,9 +90,10 @@ main {
     margin: 0 auto;
     /* border: 1px solid var(--gray-1); */
     display: grid;
-    grid-template-columns: repeat(25, 30px);
-    grid-template-rows: repeat(9, 45px);
+    grid-template-columns: repeat(25, minmax(11px,30px));
+    grid-template-rows: repeat(9, minmax(15px, 45px));
     justify-content: center;
+    aspect-ratio: 1.95;
 }
 .hero .container .item-1 {
     background-color: var(--secondary-color-dark-1);
@@ -148,12 +148,14 @@ main {
 
 .main-content {
     display: grid;
-    grid-template-columns: repeat(2, minmax(420px,500px));
-    grid-auto-rows: 420px;
+    /*grid-template-columns: repeat(2, minmax(420px,500px));*/
+    /* grid-auto-rows: 420px; */
+    /* grid-auto-flow: column; */
     justify-content: center;
     align-items: center;
+    justify-items: center;
     padding: 200px 0;
-    gap: 0px 40px;
+    gap: 100px;
 }
 .main-content h2{
     margin-bottom: 20px;
@@ -195,8 +197,8 @@ main {
 .main-content__text-block-2 {
     position: relative;
     z-index: 1;
-    grid-column: 1/2;
-    grid-row: 3/4;
+    /* grid-column: 1/2;
+    grid-row: 3/4; */
 }
 
 
@@ -205,10 +207,11 @@ main {
 -------------------------*/
 
 .main-content__container-1 {
-    height: 415px;
+    /* height: 415px; */
     display: grid;
-    grid-template-columns: repeat(27, 1fr);
-    grid-template-rows: repeat(14, 1fr);
+    grid-template-columns: repeat(21, minmax(13px, 15px));
+    grid-template-rows: repeat(14, minmax(17px, 30px));
+    aspect-ratio: 0.75;
 }
 .main-content__container-1 .item-1{
     background-color: var(--gray-1);
@@ -301,11 +304,12 @@ main {
 -------------------------*/
 
 .main-content__container-2 {
-    height: 415px;
+    /* height: 415px; */
     display: grid;
-    grid-row: 3/4;
-    grid-template-columns: repeat(14, 1fr);
-    grid-template-rows: repeat(13, 1fr);
+    /* grid-row: 3/4; */
+    grid-template-columns: repeat(14, minmax(20px,30px));
+    grid-template-rows: repeat(13, minmax(19px, 32px));
+    aspect-ratio: 1.13;
 }
 .main-content__container-2 .item-1 {
     background-color: var(--secondary-color-light-1);
@@ -329,4 +333,39 @@ main {
 }
 .main-content__container-2 img {
     height: 100%;
+}
+@media (min-width:950px){
+    main {
+        padding: 0 60px;
+    }
+    .main-content {
+        grid-template-columns: repeat(2, minmax(250px, 500px));
+        grid-auto-rows: 420px;
+        justify-content: center;
+        align-items: center;
+        padding: 200px 0;
+        gap: 300px 40px;
+    }
+    .main-content__container-2 {
+        height: 415px;
+        display: grid;
+        grid-row: 2/;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(13, 1fr);
+    }
+    .main-content__text-block-2 {
+        position: relative;
+        z-index: 1;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    header {
+        min-height: 90px;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    header nav a {
+        font-size: 2rem;
+    }
 }
