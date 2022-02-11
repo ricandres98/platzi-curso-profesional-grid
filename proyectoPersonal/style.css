@@ -163,7 +163,11 @@ main {
 .hero span {
     display: block;
     width: max-content;
+<<<<<<< HEAD
     margin: 20px auto 30px;
+=======
+    margin: 20px auto 50px;
+>>>>>>> cd9798854b02852e356736738f9a4ec72d68f69d
     font-size: 2.5rem;
     text-transform: uppercase;
     font-style: italic;
